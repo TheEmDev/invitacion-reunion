@@ -1,20 +1,10 @@
 import { NextResponse } from "next/server"
-import fs from "fs"
-import path from "path"
+import { getAttendees } from "@/lib/actions"
 
 // Esta ruta API permite a los organizadores ver quién ha confirmado
-// Nota: En producción, deberías proteger esta ruta con autenticación
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), "data", "attendees.json")
-
-    if (!fs.existsSync(filePath)) {
-      return NextResponse.json({ attendees: [] })
-    }
-
-    const fileContent = fs.readFileSync(filePath, "utf8")
-    const attendees = JSON.parse(fileContent)
-
+    const attendees = await getAttendees()
     return NextResponse.json({ attendees })
   } catch (error) {
     console.error("Error fetching attendees:", error)
