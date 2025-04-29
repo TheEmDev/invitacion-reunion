@@ -185,3 +185,4 @@ export default function InvitacionReunion() {
     </div>
   )
 }
+// Esta es una invitación a una reunión con animaciones y efectos visuales.
