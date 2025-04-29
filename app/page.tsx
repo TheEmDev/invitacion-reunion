@@ -132,7 +132,7 @@ export default function InvitacionReunion() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.1 }}
             >
-              <p>La puntualidad es opcional, pero las historias que crearemos no esperarán por nadie.</p>
+              <p>Trae a tu jevo/jeva :P</p>
             </motion.div>
           </div>
 
@@ -166,7 +166,7 @@ export default function InvitacionReunion() {
               className="bg-[#FFB6C1] hover:bg-[#FF9D5C] text-[#2A3352] font-bold px-8 py-6 rounded-full text-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <PartyPopper className="mr-2" />
-              {isSubmitting ? "Confirmando..." : "¡Confirmar Asistencia!"}
+              {isSubmitting ? "Confirmando..." : "Confirmar Asistencia"}
             </Button>
 
             {showConfirmation && (
@@ -176,7 +176,7 @@ export default function InvitacionReunion() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               >
-                ¡Genial! ¡Te esperamos, {name}!
+                ¡Genial! ¡Si llegas tarde, te gusta el pene, {name}!
               </motion.p>
             )}
           </motion.div>
