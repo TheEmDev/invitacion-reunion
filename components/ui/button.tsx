@@ -1,3 +1,4 @@
+// Cambia la extensión de este archivo a .tsx para soportar JSX correctamente
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
